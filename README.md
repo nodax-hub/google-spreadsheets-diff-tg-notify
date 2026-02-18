@@ -40,7 +40,27 @@ https://docs.google.com/spreadsheets/d/<spreadsheet_id>/edit?gid=<gid>#gid=<gid>
 
 
 
-## Развёртывание и запуск
+# Развёртывание и запуск
+
+## Использовать готовый авто собираемый image
+
+```yaml
+services:
+  sheets-watcher:
+    image: ghcr.io/nodax/google-spreadsheets-diff-tg-notify:latest
+    container_name: sheets-watcher
+    restart: unless-stopped
+    environment:
+      TELEGRAM_TOKEN: "PASTE_YOUR_TOKEN_HERE"
+      CHECK_INTERVAL_SECONDS: 60
+    volumes:
+      - sheets_data:/data
+
+volumes:
+  sheets_data:
+```
+
+## Ручная сборка образа из исходников
 
 ### Требования
 
