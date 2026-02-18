@@ -53,7 +53,7 @@ https://docs.google.com/spreadsheets/d/<spreadsheet_id>/edit?gid=<gid>#gid=<gid>
 ### Клонирование репозитория
 
 ```bash
-git clone https://github.com/nodax-hub/google-sheets-watcher.git
+git clone https://github.com/nodax-hub/google-spreadsheets-diff-tg-notify.git
 cd google-sheets-watcher
 ```
 
