@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  sheets-watcher:
+    build: .
+    container_name: sheets-watcher
+    restart: unless-stopped
+    volumes:
+      - sheets_data:/data
+    env_file:
+      - .env
+
+volumes:
+  sheets_data:

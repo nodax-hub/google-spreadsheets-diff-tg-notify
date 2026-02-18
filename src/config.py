@@ -1,0 +1,4 @@
+import os
+
+TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
+CHECK_INTERVAL_SECONDS = int(os.environ.get("CHECK_INTERVAL_SECONDS", "60"))
