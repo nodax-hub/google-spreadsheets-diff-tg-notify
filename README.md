@@ -1,4 +1,6 @@
-## Google Sheets Watcher (Telegram Bot)
+# Google Sheets Watcher (Telegram Bot)
+
+## https://t.me/nodax_sheets_notify_bot
 
 Сервис отслеживает изменения в указанных диапазонах **публичных Google Sheets** и уведомляет подписанных пользователей через **Telegram-бота**.
 
@@ -47,7 +49,7 @@ https://docs.google.com/spreadsheets/d/<spreadsheet_id>/edit?gid=<gid>#gid=<gid>
 ```yaml
 services:
   sheets-watcher:
-    image: ghcr.io/nodax/google-spreadsheets-diff-tg-notify:latest
+    image: ghcr.io/nodax-hub/google-spreadsheets-diff-tg-notify:latest
     container_name: sheets-watcher
     restart: unless-stopped
     environment:

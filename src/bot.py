@@ -15,7 +15,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logger.info("User %s started bot", update.message.chat_id)
     await update.message.reply_text(
         "Отправь ссылку Google Sheets с range.\n"
-        "Повторная отправка — отписка."
+        "Повторная отправка — отписка.\n"
         "/subscriptions — посмотреть активные подписки"
     )
 
